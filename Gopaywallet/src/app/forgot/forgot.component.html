@@ -1,0 +1,21 @@
+<!-- <p>forgot works!</p>
+<input type="email" [(ngModel)]="user.email" placeholder="email">
+<select [(ngModel)]="user.secQuestion">
+    <option value="what is your name">what is your name</option>
+    <option value="faviurite book">favourite book</option>
+    <option value="favourite food">favourite food</option>
+  </select>
+  <input type="text" [(ngModel)]="user.secAnswer" placeholder="sec Answer">
+  <button (click)="forgot()">submit</button> -->
+
+  <div class="forgot-password-container" style="color: rgb(255, 255, 255);">
+    <h4 style="color: black; margin-top: -9px;">Verify your details</h4>
+    <input type="email" [(ngModel)]="user.email" placeholder="Enter your Email">
+    <select [(ngModel)]="user.secQuestion">
+      <option value="what is your name">Your first pet name?</option>
+      <option value="faviurite book">Your favourite book?</option>
+      <option value="favourite food">Your favourite food?</option>
+    </select>
+    <input type="text" [(ngModel)]="user.secAnswer" placeholder="Enter your security Answer">
+    <button (click)="forgot()">Submit</button>
+  </div>

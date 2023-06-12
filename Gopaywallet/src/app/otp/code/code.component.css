@@ -1,0 +1,13 @@
+.box{
+  justify-content: center;
+  display: flex;
+  margin-top: 120px;
+/* margin-bottom: 200px; */
+}
+.box1{
+  justify-content: center;
+  display: flex;
+  /* margin-top: 120px; */
+/* margin-right: 50px; */
+}
+

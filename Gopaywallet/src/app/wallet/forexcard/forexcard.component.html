@@ -1,0 +1,81 @@
+
+
+<div class="username">
+  <span class="username_text">Hi, {{ userName1}}</span><img style="margin-left: 6px; "
+    src="../../../assets/images/logoutImg.svg">
+</div>
+
+
+<div>
+  <div class="main">
+    <div class="container">
+      <div class="header">
+        <div class="reward">
+          <p class="para">Reward Points {{Creditspoints}} <img src="assets\logos\medal.png" width="30px" alt=""></p>
+        </div>
+
+        <div class="waaldiv">
+
+          <p> Wallet Balance </p>
+          <span style="font-size: 30px;" class="spanwall" id="balance">₹ {{ currentbalance }} </span>
+
+        </div>
+      </div>
+      <hr>
+      <br>
+
+
+      <div class="wallet">
+        <form (ngSubmit)="addmoney()">
+          <br>
+          <input class="inputamount" type="text" name="amount" [(ngModel)]="amount" placeholder="₹ Enter Amount to Add">
+          <button style="margin-left: 50px; padding: 8px; width: 74px;" type="submit">Add</button>
+        </form>
+        <h2>Transaction Details</h2>
+        <button (click)="gettransactions()">View Transactions</button>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="maintable">
+
+
+  <table *ngIf="show">
+    <thead>
+      <tr>
+        <th>Transaction ID</th>
+        <th>Transaction Amount INR</th>
+        <th>Transaction Forex</th>
+        <th>Product ID</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of transaction  | paginate: { itemsPerPage: pageSize, currentPage: p }"
+        class="col-lg-4 product">
+        <td [ngClass]="{
+          'negative':item.transactionStatus==false
+        }">{{ item.transactionId }}</td>
+        <td [ngClass]="{
+          'negative':item.transactionStatus==false
+        }">₹ {{ item.transactionAmountINR }}</td>
+        <td [ngClass]="{
+          'negative':item.transactionStatus==false
+        }">{{item.currency }} {{item.transactionAmountForex}}</td>
+        <td [ngClass]="{
+          'negative':item.transactionStatus==false
+        }">{{ item.productName }}</td>
+        <td [ngClass]="{
+          'negative':item.transactionStatus==false
+        }">{{ item.date }}</td>
+
+      </tr>
+    </tbody>
+    <pagination-controls [maxSize]="5" [directionLinks]="true" [autoHide]="true"
+      (pageChange)="p = $event"></pagination-controls>
+  </table>
+
+
+</div>

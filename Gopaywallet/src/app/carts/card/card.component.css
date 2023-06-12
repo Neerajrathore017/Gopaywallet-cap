@@ -1,0 +1,30 @@
+.transition-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+  background-color: red;
+}
+.purchase{
+  display: flex;
+  justify-content: center;
+}
+.purchasebutton{
+  border-radius: 15px;
+  width: 175px;
+  padding: 6px;background-color: rgb(81, 185, 81);
+}
+.total{
+  padding: 50px;
+
+}
+
+
+.img{
+  justify-content: center;
+  display: flex;
+}

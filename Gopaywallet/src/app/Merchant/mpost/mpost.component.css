@@ -1,0 +1,20 @@
+body{
+  height:400px
+}
+.container{
+  margin: 70px;
+  /* margin-bottom: 400px; */
+}
+.circle1 {
+  background-color: rgb(222, 132, 255);
+  /* background-color: linear-gradient(to top, transparent, lightorange); */
+  opacity: 20%;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-20%, -60%);
+  width: 1500px;
+  height: 1500px;
+  z-index: -1;
+}

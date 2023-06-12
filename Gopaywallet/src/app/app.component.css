@@ -1,0 +1,64 @@
+.navbar-brand {
+  margin-right: auto;
+}
+.navbar-nav {z-index: 100;
+  margin-left: auto;
+}
+.nav-item {
+  font-weight: 600;
+  font-size: larger;
+}
+.navbar-nav .nav-link {
+  margin-right: 20px;
+}
+.text-container {
+  margin-top: 180px;
+}
+.image-container {
+  position: relative;
+}
+.circle1 {
+  background-color: rgb(235, 123, 123);
+  /* background-color: linear-gradient(to top, transparent, lightorange); */
+  opacity: 20%;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-20%, -60%);
+  width: 1500px;
+  height: 1500px;
+  z-index: 1;
+}
+.circle2 {
+  background-color: rgb(192, 62, 140);
+  /* background-color: linear-gradient(to top, transparent, lightorange); */
+  opacity: 20%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+}
+.image-container img {
+  position: relative;
+  z-index: 2;
+}
+.flipped-image {
+  transform: scaleX(-1);
+}
+.container2{
+  margin-top: 60px;
+}
+.checkpoints{
+  font-size: 15px;
+}
+.bankpartner {
+  width: 50px;
+}
+.footer{
+  margin-top: 250px;
+}

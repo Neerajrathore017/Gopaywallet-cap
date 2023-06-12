@@ -1,0 +1,103 @@
+<header id="header" class="header">
+
+
+  <nav id="navbarExample" class="navbar navbar-expand-lg navbar-light" aria-label="Main navigation">
+
+    <div class="container">
+      <!-- <a class="navbar-brand logo-text" href="#">Gopay</a> -->
+
+      <a href=""><img src="assets/images/gopay-logo.png" alt="" width="150px"></a>
+      <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <!-- <a class="nav-link active" routerLink="/forexcard" aria-current="page" href="">Home</a> -->
+        <ul class="navbar-nav ms-auto navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/home" aria-current="page" href="">Home</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" routerLink="/forexcard">Wallet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/currency">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/reward">Rewards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/phone">Register</a>
+          </li>
+          <li class="nav-item" *ngIf="!isLoggedIn()">
+            <a class="nav-link" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item" *ngIf="isLoggedIn()">
+            <a class="nav-link" (click)="logout()" >Logout</a>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" href="#">Article Details</a></li>
+                        <li><div class="dropdown-divider"></div></li>
+                        <li><a class="dropdown-item" href="#">Terms Conditions</a></li>
+                        <li><div class="dropdown-divider"></div></li>
+                        <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                    </ul>
+                </li> -->
+        </ul>
+        <!-- <span class="nav-item">
+                <a class="btn-solid-sm" href="#contact">Get quote</a>
+            </span> -->
+      </div>
+    </div>
+  </nav>
+</header>
+<router-outlet></router-outlet>
+
+
+<footer class="footer bg-ligth text-dark">
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <span>
+          <img src="assets/images/gopay-logo.png" alt="" width="120px">
+          <br>
+        </span>
+        <span style="font-weight: 700; color: gray;">
+          Get ready to experience <br> the world of Gopay at your fingertips.
+        </span>
+        <span class="bankpartner">
+          <img src="assets/images/footercustomerimg11.webp" alt="" width="300px">
+        </span>
+        <h5>About Us</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, officia veniam. Facere totam harum
+          recusandae. Nisi voluptate placeat dolor. Nostrum?</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Contact Info</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i> 159-161 Mahatma Gandhi Road,</li>
+          <li><i class="fas fa-map-marker-alt"></i> Mumbai - 400001, Maharashtra, INDIA</li>
+          <li><i class="fas fa-phone"></i> +91 8108445566</li>
+          <li><i class="fas fa-envelope"></i> gopaywallet@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center py-3">
+    <hr>
+    <p>&copy; 2023 GoPay pvt ltd. All rights reserved.</p>
+  </div>
+</footer>

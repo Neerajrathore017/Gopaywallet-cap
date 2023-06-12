@@ -1,0 +1,107 @@
+
+
+<!-- <select (change)="handleSelection($event)">
+  <option value="" [defaultSelected]="">Select Product</option>
+  <option value="Book"> Book </option>
+  <option value="Cloth"> Cloth </option>
+</select>
+
+
+<form *ngIf="bookk" action="" (submit)="postbook()">
+  <br>
+  <label for="">Book Name</label>
+  <input type="text" name="book.bookName" [(ngModel)]="book.bookName"><br>
+  <label for="">Book Price</label>
+  <input type="text" name="book.bookPrice" [(ngModel)]="book.bookPrice"><br>
+  <label for="">Book Catagory</label>
+  <input type="text" name="book.bookCatagory" [(ngModel)]="book.bookCategory"><br>
+  <label for="">Book URL</label>
+  <input type="text"name="book.bookImage" [(ngModel)]="book.bookImage"><br>
+  <label for="">Book Details</label>
+  <input type="text"name="book.bookDetails" [(ngModel)]="book.bookDetails"><br>
+  <button type="submit">Post Book</button>
+</form> -->
+
+
+
+<div class="container">
+
+  <button (click)="logout()" class="btn btn-primary mt-4">Logout</button>
+<br><br>
+  <select class="form-select" (change)="handleSelection($event)">
+    <option value="" selected disabled>Select Product</option>
+    <option value="Book">Book</option>
+    <option value="Cloth">Cloth</option>
+  </select>
+
+  <form *ngIf="bookk" action="" (submit)="postbook()" class="mt-4">
+    <div class="mb-3">
+      <label for="bookName" class="form-label">Book Name</label>
+      <input type="text" name="bookName" id="bookName" class="form-control" [(ngModel)]="book.bookName">
+    </div>
+
+    <div class="mb-3">
+      <label for="bookPrice" class="form-label">Book Price</label>
+      <input type="text" name="bookPrice" id="bookPrice" class="form-control" [(ngModel)]="book.bookPrice">
+    </div>
+
+    <div class="mb-3">
+      <label for="bookCategory" class="form-label">Book Category</label>
+      <input type="text" name="bookCategory" id="bookCategory" class="form-control" [(ngModel)]="book.bookCatagory">
+    </div>
+
+    <div class="mb-3">
+      <label for="bookImage" class="form-label">Book URL</label>
+      <input type="text" name="bookImage" id="bookImage" class="form-control" [(ngModel)]="book.bookImage">
+    </div>
+
+    <div class="mb-3">
+      <label for="bookDetails" class="form-label">Book Details</label>
+      <input type="text" name="bookDetails" id="bookDetails" class="form-control" [(ngModel)]="book.bookDetails">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Post Book</button>
+  </form>
+</div>
+
+
+
+<!--
+<form  *ngIf="clothh" action="" (submit)="postcloth()"><br>
+  <label for="">Cloth Name</label>
+  <input type="text" name="cloth.clothName" [(ngModel)]="cloth.clothName"><br>
+  <label for="">Cloth Price</label>
+  <input type="text" name="cloth.clothPrice" [(ngModel)]="cloth.clothPrice"><br>
+  <label for="">Cloth Catagory</label>
+  <input type="text" name="cloth.clothCatagory" [(ngModel)]="cloth.clothCatagory"><br>
+  <label for="">Cloth URL</label>
+  <input type="text"name="book.clothImage" [(ngModel)]="cloth.clothImage"><br>
+  <button type="submit">Post Cloth</button>
+</form>
+<button (click)="logout()">Logout</button> -->
+<div class="container">
+<form *ngIf="clothh" action="" (submit)="postcloth()" class="mt-4">
+  <div class="mb-3">
+    <label for="clothName" class="form-label">Cloth Name</label>
+    <input type="text" name="clothName" id="clothName" class="form-control" [(ngModel)]="cloth.clothName">
+  </div>
+
+  <div class="mb-3">
+    <label for="clothPrice" class="form-label">Cloth Price</label>
+    <input type="text" name="clothPrice" id="clothPrice" class="form-control" [(ngModel)]="cloth.clothPrice">
+  </div>
+
+  <div class="mb-3">
+    <label for="clothCategory" class="form-label">Cloth Category</label>
+    <input type="text" name="clothCategory" id="clothCategory" class="form-control" [(ngModel)]="cloth.clothCatagory">
+  </div>
+
+  <div class="mb-3">
+    <label for="clothImage" class="form-label">Cloth URL</label>
+    <input type="text" name="clothImage" id="clothImage" class="form-control" [(ngModel)]="cloth.clothImage">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Post Cloth</button>
+</form>
+</div>
+

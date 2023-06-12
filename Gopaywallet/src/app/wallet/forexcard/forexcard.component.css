@@ -1,0 +1,234 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f2f2f2;
+}
+
+h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #45a049;
+} */
+
+
+.main{
+  border-radius: 7px;
+  margin: 140px 109px 30px;
+  width: 1300px;
+  /* margin: 100px 457px; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.maintable{    border-radius: 7px;
+
+  margin: 80px 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.container {
+  margin: -24px auto;
+  height: 400px;
+  max-width: 1300px;
+  padding: 20px;
+  background-color: #fbf1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .username {
+  font-weight: bold;
+  margin-right: 10px;
+} */
+.top-logo {
+  width: 90px;
+  height: 35px;
+}
+.wallet {
+  margin-top: 2px;
+}
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"] {
+  padding: 5px;
+}
+button {
+  padding: 10px 20px;
+  background-color: rgb(235, 123, 123);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+button.logout {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.balance-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+
+.reward{
+  display: flex;
+  font: 40px;
+}
+.para{
+  font-size: 20px;
+  width: 300px;
+}
+.walletbalance{
+  justify-content: right;
+  display: flex;
+  margin-left: 879px;
+  font-size: 20px;
+}
+.inputamount{
+  width: 325px;
+  padding: 13px;
+}
+
+.spanwall{
+  display: block;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+.waaldiv{
+  display: block;
+}
+.username
+{
+  border: 2px solid black;
+  display: inline;
+  padding: 4px 10px 4px 15px;
+  position: absolute;
+  top: 7rem;
+  right: 7rem;
+  border-radius: 25px;
+  background-color: rgb(36, 59, 117);
+  color: white;
+}
+.negative{
+  /* background-color: red; */
+  color: red;
+}
+
+

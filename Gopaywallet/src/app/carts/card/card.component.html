@@ -1,0 +1,39 @@
+<div class="total">
+
+  <h1>Total Amount : {{totalcurrency}} {{currency}}</h1>
+</div>
+<div class="row container">
+  <div *ngFor="let cartItem of cart | paginate: { itemsPerPage: pageSize, currentPage: p }" class="col-lg-4 product">
+    <div class="news col-lg-30" class="shadow-lg p-3 mb-5 bg-white rounded">
+
+ <div *ngIf="cartItem.clothName!=''">
+   <img [src]="cartItem.clothImage"  alt="" width="310px" height="210px">
+   <br>
+   <p><strong>Name : </strong> {{cartItem.clothName}}</p>
+   <p><strong>Category : </strong> {{cartItem.clothCatagory}}</p>
+   <p><strong>Price : </strong> {{cartItem.clothPrice * value}}</p>
+
+  </div>
+  <div *ngIf="cartItem.bookName!=''">
+  <img [src]="cartItem.bookImage" alt=""  width="310px" height="210px"  >
+  <br>
+  <p><strong>Name : </strong>{{cartItem.bookName}}</p>
+  <p>{{cartItem.bookDetails}}</p>
+  <p><Strong>Category : </Strong>{{cartItem.bookCatagory}}</p>
+  <p><Strong>Price : </Strong>{{cartItem.bookPrice*values}}</p>
+
+</div>
+      <!-- <p>{{cartItem.bookMerchantEmail}}</p> -->
+      <!-- <button class="btn btn-primary" (click)="addcart()">Add TO cart</button> -->
+    </div>
+  </div>
+</div>
+<pagination-controls [maxSize]="5" [directionLinks]="true" [autoHide]="true"
+  (pageChange)="p = $event"></pagination-controls>
+<div class="purchase">
+
+  <button (click)="purchasenow()" class="purchasebutton">Pay Now</button>
+</div>
+
+
+

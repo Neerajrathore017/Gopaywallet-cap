@@ -1,0 +1,51 @@
+<!-- <div class="username">
+
+  <button (click)="tocart()" class="button-10" role="button" >Go to Cart</button></div>
+<br>
+
+<div class="row container" style="margin-left: 193px;">
+<div class="row container">
+  <div *ngFor="let Item of cloth | paginate: { itemsPerPage: pageSize, currentPage: p }" class="col-lg-4 product">
+    <div class="news col-lg-30">
+
+      <p>{{Item.clothName}}</p>
+      <img [src]="Item.clothImage" alt="" width="200px">
+      <p>{{Item.clothCategory}}</p>
+      <p>{{Item.clothPrice}}</p>
+    </div>
+  </div>
+</div>
+<pagination-controls [maxSize]="5" [directionLinks]="true" [autoHide]="true"
+  (pageChange)="p = $event"></pagination-controls>
+ -->
+
+
+
+
+  <div class="username">
+
+    <button (click)="tocart()" class="button-10" role="button" >Go to Cart</button></div>
+  <br>
+
+  <div class="row container" style="margin-left: 193px;">
+
+
+
+    <div *ngFor="let Item of cloth | paginate: { itemsPerPage: pageSize, currentPage: p }" class="col-lg-4 product">
+      <div class="news col-lg-30 shadow-lg p-3 mb-5 bg-white rounded equal-height">
+        <img [src]="Item.clothImage" alt="" width="150px" height="150px">
+        <p><strong>Cloth Name:</strong> {{Item.clothName}}</p>
+        <p><strong>Cloth Category:</strong> {{Item.clothCatagory}}</p>
+        <p><strong>Price:</strong> {{Item.clothPrice * value}}</p>
+        <button class="btn btn-primary fixed-button" (click)="addcart(Item)">
+          <!-- <img src="assets/logos/icons8-shopping-cart-50.png" alt=""> Add to Cart -->
+          <!-- <p>{{Item.clothCategory}}</p> -->
+          <!-- <p>Merchant Email: {{Item.bookMerchantEmail}}</p> -->
+          <i class="fa-solid fa-cart-shopping"></i> &emsp;Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <pagination-controls [maxSize]="5" [directionLinks]="true" [autoHide]="true" (pageChange)="p = $event"></pagination-controls>
+

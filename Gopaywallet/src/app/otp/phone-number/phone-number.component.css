@@ -1,0 +1,9 @@
+.box{
+  margin-top: 120px;
+/* margin-bottom: 200px; */
+}
+.text{
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+}

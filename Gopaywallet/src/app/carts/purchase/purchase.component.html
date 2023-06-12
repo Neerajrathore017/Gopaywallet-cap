@@ -1,0 +1,42 @@
+<!-- <P><strong>Wallet Balance : {{currentbalance*currencyvalue}} {{currency}}</strong></P><br>
+<p><Strong>Credit Score : {{Creditspoints*currencyvalue}} {{currency}}</Strong></p>
+<p><Strong>Total Amount : {{totalcurrency}} {{currency}}</Strong></p>
+<p><strong>Selected Currency value : {{currencyvalue}} {{currency}}</strong></p>
+<button (click)="purchaseproduct()">Buy</button> -->
+<div class="custom-card" style="margin-top: 10vh; margin-bottom: 15vh;  border-radius: 15px;">
+  <div class="circle1"></div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Wallet Balance:</h5>
+      <p class="card-text">{{currentbalance*currencyvalue}} {{currency}}</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Credit Score available:</h5>
+      <p class="card-text">{{Creditspoints}}</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Total Amount of Items:</h5>
+      <p class="card-text">{{totalcurrency}} {{currency}}</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Selected Currency value:</h5>
+      <p class="card-text">{{currencyvalue}} {{currency}}</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Payable amount ({{discountApplied}})</h5>
+      <p class="card-text">{{payableCurrency}} {{currency}}</p>
+    </div>
+  </div>
+  <div class="text-center">
+    <button class="btn btn-primary" (click)="purchaseproduct()"
+      style="background-color: green; border-color: green;">Buy</button>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+
+ <div class="container">
+  <div class="circle1"></div>
+  <div class="row">
+      <div class="col-lg-6 col-xl-5" style="margin-top: 150px;">
+          <div class="text-container">
+              <h1 class="h1-large">Register Now !</h1>
+              <h5>Best wallet for international travellers.</h5>
+              <p class="p-large"></p>
+              <span>
+                  <ul class="checkpoints">
+                      <li>ZERO forex markup^</li>
+                      <li>Free international airport lounge access* in India</li>
+                  </ul>
+              </span>
+              <!-- <a class="btn-solid-lg" href="#services">Offered services</a> -->
+          </div>
+      </div>
+      <div class="col-lg-6 col-xl-7" style="">
+          <!-- <div class="circle"></div> -->
+          <div class="container image-container">
+              <!-- <img class="img-fluid" src="assets/images/landing_phone.webp" alt="alternative" />
+              <div class="circle1"></div> -->
+              <div class="register" style="">
+                <form [formGroup]="form" (ngSubmit)="signUp()" action="">
+                  <input class="input" formControlName="firstName" type="text" name="user.firstName" [(ngModel)]="user.firstName" placeholder="First Name">
+                  <br><br>
+                  <input class="input" formControlName="lastName" type="text" name="user.lastName" [(ngModel)]="user.lastName" placeholder="Last Name">
+                  <br><br>
+                  <input class="input" formControlName="email" type="email" name="user.email" [(ngModel)]="user.email" placeholder="Enter Email">
+                  <br>
+                  <span *ngIf="email && email.invalid && email.touched" class="error-message">Enter a valid email</span>
+                  <br>
+                  <input class="input" formControlName="password" type="password" name="user.password" [(ngModel)]="user.password" placeholder="Password">
+                  <br>
+                  <span *ngIf="password && password.invalid && password.touched" class="error-message">Enter a password</span>
+                  <br>
+                  <select class="select" formControlName="secQuestion" name="user.secQuestion" [(ngModel)]="user.secQuestion">
+                    <option value="" disabled selected style="color: aliceblue;">&nbsp;&nbsp;&nbsp;Select Security Question</option>
+                    <option value="what is your name">What is Your Name</option>
+                    <option value="faviurite book">Favorite Book</option>
+                    <option value="favorite food">Favorite Food</option>
+                  </select>
+                  <br>
+                  <span *ngIf="secQuestion && secQuestion.invalid && secQuestion.touched" class="error-message">Select a security question</span>
+                  <br>
+                  <input class="input" formControlName="secAnswer" name="user.secAnswer" type="text" [(ngModel)]="user.secAnswer" placeholder="Security Answer">
+                  <br>
+                  <span *ngIf="secAnswer && secAnswer.invalid && secAnswer.touched" class="error-message">Enter a security answer</span>
+                  <br>
+                  <input class="input" formControlName="phoneNo" type="text" name="user.phoneNo" [(ngModel)]="user.phoneNo" placeholder="Phone Number">
+                  <br>
+                  <span *ngIf="phoneNo && phoneNo.invalid && phoneNo.touched" class="error-message">Enter a 10-digit phone number</span>
+                  <br>
+                  <select class="select" formControlName="bankName" name="bank.bankName" [(ngModel)]="bank.bankName">
+                    <option value="" disabled selected>&nbsp;&nbsp;&nbsp;Select Bank</option>
+                    <option value="HDFC">HDFC</option>
+                    <option value="SBI">SBI</option>
+                    <option value="BOI">BOI</option>
+                  </select>
+                  <br>
+                  <span *ngIf="bankName && bankName.invalid && bankName.touched" class="error-message">Select a bank</span>
+                  <br>
+                  <input class="input" formControlName="accountNo" type="text" name="bank.accountNo" [(ngModel)]="bank.accoutNo" placeholder="Account Number">
+                  <br>
+                  <span *ngIf="accountNo && accountNo.invalid && accountNo.touched" class="error-message">Enter an account number</span>
+                  <br>
+                  <div class="buttondiv">
+                    <button class="button-30" type="submit">Register</button>
+                  </div>
+                </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

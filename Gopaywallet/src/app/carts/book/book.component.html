@@ -1,0 +1,28 @@
+<div class="username">
+
+  <button (click)="tocart()" class="button-10" role="button">Go to Cart</button>
+</div>
+<br>
+
+<div class="row container" style="margin-left: 193px;">
+
+
+
+  <div *ngFor="let Item of book | paginate: { itemsPerPage: pageSize, currentPage: p }" class="col-lg-4 product ">
+    <div class="news col-lg-30 shadow-lg p-3 mb-5 bg-white rounded equal-height">
+      <img [src]="Item.bookImage" alt="" width="150px" height="150px">
+      <p><strong>Book Name:</strong> {{Item.bookName}}</p>
+      <p><strong>About : </strong>{{Item.bookDetails}}</p>
+
+      <p><strong>Book Category:</strong> {{Item.bookCatagory}}</p>
+      <p><strong>Price:</strong> {{Item.bookPrice * value}}</p>
+      <button class="btn btn-primary fixed-button" (click)="addcart(Item)">
+
+        <i class="fa-solid fa-cart-shopping"></i> &emsp;Add to cart
+      </button>
+    </div>
+  </div>
+</div>
+
+<pagination-controls [maxSize]="5" [directionLinks]="true" [autoHide]="true"
+  (pageChange)="p = $event"></pagination-controls>
